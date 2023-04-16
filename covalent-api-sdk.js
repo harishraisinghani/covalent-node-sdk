@@ -26,7 +26,7 @@ class CovalentAPI {
     return this.makeRequest(endpoint);
   }
 
-  async getTokenBalances(chainId, address) {
+  async getAllTokenBalances(chainId, address) {
     const endpoint = `${this.baseURL}/${chainId}/address/${address}/balances_v2/?nft=true&key=${this.apiKey}`;
     return this.makeRequest(endpoint);
   }
